@@ -19,7 +19,7 @@ image_size_limit = 976.56 * 1024  # em bytes
 # Lista de termos-chave para sortear
 search_terms = ['furniture', 'wood furniture', 'plastic furniture', 'metal furniture', 'glass furniture',
                 'bamboo furniture', 'ceramic furniture', 'bathroom furniture', 'kitchen furniture',
-                'restroom furniture', 'bedroom furniture', 'garden furniture', 'office furniture']
+                'restroom furniture', 'bedroom furniture', 'garden furniture', 'office furniture', 'hotel furniture']
 
 # Sorteia aleatoriamente um termo de busca
 random_term = random.choice(search_terms)
