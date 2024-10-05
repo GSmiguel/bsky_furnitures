@@ -53,7 +53,6 @@ if response.status_code == 200:
                 image_data = image_response.content
 
                 image_size = len(image_data)
-                print(f"Image size: {image_size / 1024:.2f} KB")
 
                 if image_size <= image_size_limit:
                     suitable_image_found = True
