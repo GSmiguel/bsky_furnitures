@@ -1,0 +1,30 @@
+name: Run Script Periodically
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Executa a cada hora (você pode ajustar o cron conforme necessário)
+  workflow_dispatch:  # Permite que você execute manualmente o workflow
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'  # Defina a versão do Python que você deseja usar
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-dotenv requests atproto
+
+      - name: Run script
+        run: python basic_script.py
+        env:
+          BLUESKY_EMAIL: ${{ secrets.BLUESKY_EMAIL }}
+          BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
