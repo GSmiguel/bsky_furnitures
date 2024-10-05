@@ -2,8 +2,8 @@ name: Run Script Periodically
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Isso fará com que o script execute a cada duas horas.
-  workflow_dispatch:  # Permite a execução manual do workflow.
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
 
 jobs:
   run-script:
