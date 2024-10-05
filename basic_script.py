@@ -1,13 +1,14 @@
 import requests
 import random
+import os
+from dotenv import load_dotenv
 from atproto import Client
 
-# Substitua pelos seus dados de login
-email = 'liminal_spacess@outlook.com'
-password = 'frango94@'
+load_dotenv()
 
-# Chave da API do Pexels (substitua pela sua chave)
-pexels_api_key = '39gP39gTncnngvQeh3DVqAgns3H8DZI0lMaPgTOJAsITFLSmOiQE2tm2'
+email = os.getenv('BLUESKY_EMAIL')
+password = os.getenv('BLUESKY_PASSWORD')
+pexels_api_key = os.getenv('PEXELS_API_KEY')
 
 # URL base da Pexels API
 pexels_url = 'https://api.pexels.com/v1/search'
