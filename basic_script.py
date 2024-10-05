@@ -10,9 +10,6 @@ email = os.getenv('BLUESKY_EMAIL')
 password = os.getenv('BLUESKY_PASSWORD')
 pexels_api_key = os.getenv('PEXELS_API_KEY')
 
-print("BLUESKY_EMAIL:", os.getenv('BLUESKY_EMAIL'))
-print("BLUESKY_PASSWORD:", os.getenv('BLUESKY_PASSWORD'))
-
 # URL base da Pexels API
 pexels_url = 'https://api.pexels.com/v1/search'
 
