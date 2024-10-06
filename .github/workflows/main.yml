@@ -28,7 +28,7 @@ jobs:
           BLUESKY_EMAIL: ${{ secrets.BLUESKY_EMAIL }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-        run: |
+        #run: |
           echo "Running script"
           python basic_script.py
 
