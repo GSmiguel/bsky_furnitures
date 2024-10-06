@@ -14,9 +14,23 @@ pexels_url = 'https://api.pexels.com/v1/search'
 
 image_size_limit = 976.56 * 1024
 
-search_terms = ['furniture', 'wood furniture', 'plastic furniture', 'metal furniture', 'glass furniture',
-                'bamboo furniture', 'ceramic furniture', 'bathroom furniture', 'kitchen furniture',
-                'restroom furniture', 'bedroom furniture', 'garden furniture', 'office furniture', 'hotel furniture']
+search_terms = ['furniture', 'sofa', 'armchair', 'coffee table', 'dining table', 'bookshelf', 
+                'bed', 'dresser', 'nightstand', 'wardrobe', 'desk', 'office chair', 'tv stand', 
+                'sideboard', 'bar stool', 'recliner', 'console table', 'ottoman', 'bench', 'loveseat', 
+                'chaise lounge', 'rocking chair', 'folding chair', 'sectional sofa', 'futon', 
+                'bunk bed', 'daybed', 'headboard', 'footstool', 'hall tree', 'vanity table', 
+                'dining bench', 'buffet table', 'china cabinet', 'kitchen island', 'wine rack', 
+                'patio chair', 'hammock', 'bean bag chair', 'murphy bed', 'stool', 'curio cabinet', 
+                'chaise longue', 'armless chair', 'sleigh bed', 'parsons chair', 'trundle bed', 
+                'tallboy', 'chesterfield sofa', 'lift-top coffee table', 'plant stand', 'crib', 
+                'changing table', 'high chair', 'breakfront', 'secretary desk', 'writing desk', 
+                'tuffet', 'pedestal table', 'vitrine', 'glider chair', 'ladder shelf', 'pouf', 
+                'media console', 'dressing table', 'cubby storage', 'tuffet', 'valet stand', 'captains bed',
+                'sleigh sofa', 'gaming chair', 'cabinet', 'armoire', 'chaise', 'banquette', 'etagere', 
+                'lap desk', 'book trolley', 'hat stand', 'umbrella stand', 'barrister bookcase', 
+                'modular sofa', 'corner table', 'nesting tables', 'fainting couch', 'console desk', 
+                'camp bed', 'vanity stool', 'telephone table', 'credenza', 'kitchen hutch', 'laundry hamper',
+                'entryway bench', 'rolling cart', 'dining cart']
 
 random_term = random.choice(search_terms)
 
