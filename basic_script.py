@@ -54,22 +54,7 @@ if response.status_code == 200:
 
                 image_size = len(image_data)
 
-                if image_size <= image_size_limit:
-                    suitable_image_found = True
-
-            data['photos'].remove(random_image)
-        
-        if suitable_image_found:
-            image_alt_text = f"{random_term.capitalize()}"
-
-            try:
-                client = Client(base_url='https://bsky.social')
-                client.login(email, password)
-            except Exception as e:
-                print(f"Login error: {e}")
-
-            try:
-                upload_response = client.send_image(image=image_data, text='', image_alt=image_alt_text)
+                if image_size e_alt=image_alt_text)
                     
             except Exception as e:
                 print(f"Post creation error: {e}")
